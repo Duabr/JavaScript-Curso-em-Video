@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            background-color: grey;
+            font: normal 18pt arial;
+        }
+        input {
+            font: normal 15pt arial;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sobre Condições</h1>
+    Velocidade: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado">Limite de velocidade: </div>
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('input#txtvel')
+            var velocidade = Number(txtv.value)
+            var resultado = document.querySelector('div#resultado')
+            if (velocidade > 80) {
+                resultado.innerHTML = "Limite de velocidade: <strong>ULTRAPASSADO</strong>."
+            } else if (velocidade < 80) {
+                resultado.innerHTML = "Limite de velocidade: <strong>Respeitado</strong>"
+            } else {
+                resultado.innerHTML = "Limite de velocidade: <strong>EXATAMENTE NO LIMITE</strong>"
+            }
+        }
+    </script>
+</body>
+</html>

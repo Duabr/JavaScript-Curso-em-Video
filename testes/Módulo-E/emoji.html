@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Colocando emojis através do HTML: &#x(código hexadecimal do emoji, sem o U+)-->
+    <div>
+        HTML:
+        <p>
+            &#x1F525
+            &#x1F914
+        </p>
+    </div>
+    <div id="javascript">
+        JavaScript: 
+        <p id="emoji"></p>
+    </div> 
+
+    <script>
+        // Colocando emojis através do JavaScript: \u{(código hexadecimal do emoji, sem o U+)}
+        var texto = document.querySelector("p#emoji")
+        texto.innerHTML += "\u{1F610}"
+        texto.innerHTML += `\u{1FAE9}`
+    </script>
+</body>
+</html>

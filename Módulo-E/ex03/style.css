@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(3, 3, 43);
+    color: white;
+    text-align: center;
+    font: normal 16pt arial;
+}
+section {
+    background-color: rgba(0, 68, 255, 0.753);
+    margin: auto;
+    width: 700px;
+    height: auto;
+    text-align: left;
+    padding: 30px;
+}
+input {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+div {
+    margin-top: 10px;
+}
+input#inicio {
+    margin-left: 20px;
+}
+input#fim {
+    margin-left: 36px;
+}
+input#passo {
+    margin-left: 12px;
+}
+p#autor {
+    font-style: italic;
+}

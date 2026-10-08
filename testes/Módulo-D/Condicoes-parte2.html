@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Condições: parte 2</title>
+    <style>
+        body {
+            background-color: rgb(161, 161, 10);
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switch Cases</h1>
+    <p id="dia"></p>
+    <script>
+        var diaSemana = new Date()
+        diaSemana = diaSemana.getDay()
+        var msg = document.querySelector("p#dia")
+        switch (diaSemana){
+            case 0:
+                msg.innerHTML = "Hoje é: Domingo"
+                break
+            case 1:
+                msg.innerHTML = "Hoje é: Segunda-feira"
+                break
+            case 2:
+                msg.innerHTML = "Hoje é: Terça-feira"
+                break
+            case 3:
+                msg.innerHTML = "Hoje é: Quarta-feira"
+                break
+            case 4:
+                msg.innerHTML = "Hoje é: Quinta-feira"
+                break
+            case 5:
+                msg.innerHTML = "Hoje é: Sexta-feira"
+                break
+            case 6:
+                msg.innerHTML = "Hoje é: Sábado"
+                break
+            default:
+                msg.innerHTML = "[ERRO] Dia inválido"
+        }
+    </script>
+</body>
+</html>

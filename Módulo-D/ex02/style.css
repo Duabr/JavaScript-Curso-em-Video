@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(54, 54, 202);
+    color: white;
+    font: normal 18pt arial;
+    text-align: center;
+}
+section {
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    text-align: left;
+    padding: 20px;
+}
+div {
+    margin-bottom: 20px;
+}
+input {
+    font-size: 16px;
+}
+p#resultado {
+    text-align: center;
+    margin-top: 60px;
+}
+div#img {   
+    text-align: center;
+}
+footer {
+    font-style: italic;
+}

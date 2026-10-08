@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMs-Parte1</title>
+    <style>
+        body {
+            background-color: rgb(95, 206, 22);
+            color: rgb(146, 12, 12);
+            font: normal 18pt Comic;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Sobre DOMs</h1>
+    <p>DOM (Document Object Model) é um objeto para documentos<br>
+    Mais importante, uma árvore DOM é uma árvore hierárquica que representa<br>
+    detalhes e configurações de uma página web, por exemplo</p>
+    <p id="ex">Exemplos:</p>
+    <script> // Exemplos:
+        window.document.writeln(window.navigator.appCodeName + "<br>")
+        document.writeln(window.document.URL + "<br>")
+
+        // Selecionar um objeto por tags
+        var p1 = document.getElementsByTagName('p')[0]
+        document.writeln('primeiro parágrafo: "' + p1.innerText + '"<br>')// Ou p1.innerHTML para retornar o texto junto com formatações (no caso viria junto com as <br>'s)
+        p1.style.color = 'white' // Mudando a cor do primeiro parágrafo através de DOM (pelo javascript)
+
+        // Selecionar um objeto por ID
+        p2 = document.getElementById('ex')
+        p2.innerText = "Alguns exemplos: "// É possível mudar o conteúdo do objeto
+        document.write("Segundo parágrafo: " + p2.innerText + "<br>")
+
+        // Também há outras formas de selecionar um objeto: por nome, por classe, etc...
+        // Mas o mais recomendado é por Selector:
+        var h1 = document.querySelector('h1') // h1#id se tivesse que referenciar por ID, trocando # por . caso fosse classe
+        document.write(h1.innerText)
+        h1.style.color = 'purple' 
+    </script>
+</body>
+</html>

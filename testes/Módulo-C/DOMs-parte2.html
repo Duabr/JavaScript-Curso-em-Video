@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMS-parte2</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            font: normal 18pt arial;
+        }
+        div#area {
+            background-color: black;
+            font: normal 18pt arial;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#resultado {
+            font: normal 13pt arial;
+            margin-top: 10px;
+        }
+        input {
+            font: normal 12pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sobre eventos DOM</h1>
+    <p>
+        Eventos DOM se referem a eventos que podem ocorrer <br>
+        com elementos DOM (com uma div, por exemplo)
+    </p>
+    <div id='area' onclick="clicar()" onmouseenter="passar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <h2>Somando Números</h2>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="resultado">Resultado =</div>
+
+    <script>
+        /* Como alternativa, ao invés de deixar a tag <div> poluída do jeito que está,
+        é possível fazer esse código na parte javascript, como está a seguir:
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', passar)
+        area.addEventListener('mouseout', sair) */
+        // Dessa forma só é preciso instanciar a variável uma vez, fora de cada function
+        function clicar(){
+            var areaClicar = document.getElementById('area')
+            areaClicar.innerHTML = "CLICOU!"
+            areaClicar.style.color = 'green'
+        }
+        function passar(){
+            var areaPassar = document.getElementById('area')
+            areaPassar.innerHTML = 'Clique'
+            areaPassar.style.color = 'yellow'
+        }
+        function sair(){
+            var areaSair = document.getElementById('area')
+            areaSair.innerHTML = 'Interaja...'
+            areaSair.style.color = 'white'
+        }
+        function somar(){
+            var tn1 = document.getElementById('n1')
+            var tn2 = document.getElementById('n2')
+            var resultado = document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            resultado.innerHTML = `Resultado = <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

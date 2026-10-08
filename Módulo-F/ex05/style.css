@@ -1,0 +1,38 @@
+body {
+    color: white;
+    font: normal 18pt arial;
+    background-color: rgb(0, 94, 47);
+    text-align: center;
+}
+section {
+    color: white;
+    background-color: rgb(3, 31, 83);
+    width: 650px;
+    height: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px;
+}
+input#adicionarNum {
+    font-size: medium;
+    width: 130px;
+}
+div {
+    margin-top: 5px;
+}
+select {
+    box-shadow: 5px 5px 5px;
+    width: 200px;
+    height: 400px;
+}
+p#autor {
+    font-style: italic;
+}
+div#lista {
+    text-align: left;
+    
+}
+div#output {
+    text-align: right;
+}

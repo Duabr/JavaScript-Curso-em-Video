@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Idade</h1>
+    </header>
+
+    <section>
+        <div>
+            Data de Nascimento: <input type="number" id="anoNasc">
+        </div>
+        <div>
+            Sexo: <input type="radio" id="escolha1" value="masc" name="sexo">
+            <label for="escolha1">Masculino</label>
+            <input type="radio" id="escolha2" value="fem" name="sexo">
+            <label for="escolha2">Feminino</label>
+            <input type="radio" id="escolha3" value="outros" name="sexo">
+            <label for="escolha3">Outros</label>
+        </div>
+        <div>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div>
+            <p id="resultado"></p>
+        </div>
+        <div id="img">
+            <img src="" alt="" id="pessoa" width="450px">
+        </div>
+    </section>
+
+    <footer>
+        <p id="autor">&copy; Github: Duabr</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

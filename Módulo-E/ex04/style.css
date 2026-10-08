@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(2, 99, 2);
+    color: white;
+    text-align: center;
+    font: normal 18pt arial;
+}
+section {
+    color: black;
+    margin: auto;
+    text-align: left;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: greenyellow;
+    width: 400px;
+}
+div {
+    margin-top: 10px;
+}
+input#numero {
+    font-size: 12pt;
+}
+input#botao {
+    font: normal 12pt arial;
+    margin-top: 10px;
+}
+select {
+    width: 200px;
+}

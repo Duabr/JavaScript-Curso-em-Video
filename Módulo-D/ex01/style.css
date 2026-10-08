@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(83, 85, 80);
+    color: white;
+    font: normal 18pt arial;
+    text-align: center;
+}
+section {
+    background-color: white;
+    color: black;
+    height: 500px;
+    width: 700px;
+    line-height: 100px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.445);
+}
+p#autor {
+    font: italic 20px arial;
+}
+p#horario {
+    margin: auto;
+}
+img#imgHora {
+    border-radius: 150px;
+}
+footer {
+    font-style: italic;
+}
